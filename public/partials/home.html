@@ -1,0 +1,13 @@
+<h1>Search Bar</h1>
+
+<p>Rendered message: {{message}}</p>
+
+
+<input type='text' ng-model='search'>
+<button ng-click='getMovie()'>GET SOME</button>
+<div class='well' ng-repeat='result in results'>
+
+<p>{{result.Title}}  {{result.Year}}</p>
+
+
+</div>
