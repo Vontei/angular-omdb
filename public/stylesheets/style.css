@@ -7,3 +7,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+button{
+  margin-top: 15px;
+}
+
+input{
+  text-align: center;
+}
+
+
+.well:hover{
+  background-color: #00B7FF;
+  color: white;
+}
+
+.jumbotron{
+  background-image: url(http://www.2becrazy.de/wp-content/uploads/DVDCover.jpg);
+}
+
+.jumbotron h1{
+  font-size: 8em;
+  color:#222222;
+  background-color: rgba(255, 255, 255, .7);
+}

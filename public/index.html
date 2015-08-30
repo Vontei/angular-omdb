@@ -10,21 +10,29 @@
     <script src='/javascripts/app.js'></script>
     <script src='/javascripts/controllers.js'></script>
   </head>
-  <body>
-
-    <nav class="navbar navbar-left navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/#/">
-          Angular OMDB
-          </a>
-      <div class='container'>
-      <ul class="nav navbar-nav">
-        <li><a href="/#/bio">Home</a></li>
-        <li><a href="/#/projects">Movies</a></li>
-      </div>
+  <body ng-controller='homeController'>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Powered by OMDB</a>
+        </div><!-- /.container -->
+    </div><!-- /.navbar -->
+    <div class="jumbotron text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-12 col-sm-12">
+              <h1>Explore</h1>
+                <!-- <p>your favorite movies.</p> -->
+              <input class='form-control' type='text' ng-model='search'>
+              <button class='btn btn-primary' ng-click='getMovie()'>SEARCH</button>
+            </div>
+          </div>
+        </div>
     </div>
-    </nav>
 
     <ng-view></ng-view>
 
