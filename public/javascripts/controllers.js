@@ -17,3 +17,10 @@ app.controller('movieController',function ($scope, $http) {
     })
   }
 })
+
+
+app.controller('filmController', function($scope, $http, $routeParams){
+  $http.get('http://www.omdbapi.com/?i=' + $routeParams.id).then(function (data) {
+    $scope.movieResults = data.data
+  })
+})

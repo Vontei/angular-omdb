@@ -7,5 +7,9 @@ app.config(function ($routeProvider, $locationProvider) {
       controller: 'homeController',
       controller: 'movieController'
     })
-    
+    .when('/:id', {
+      templateUrl: 'partials/movie.html',
+      controller: 'homeController',
+      controller: 'filmController'
+    })
 })
