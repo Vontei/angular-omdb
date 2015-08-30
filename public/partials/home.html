@@ -3,8 +3,7 @@
   <div class="row">
     <div class="inline col-sm-6" ng-repeat='result in results'>
       <div class="well">
-        <p>{{result.Title}}  {{result.Year}}</p>
-        <a href='/#/'+'result.imdbID'>{{result.imdbID}}</a>
+        <a href='/#/{{result.imdbID}}'>{{result.Title}}  {{result.Year}}</a>
       </div>
     </div>
   </div>

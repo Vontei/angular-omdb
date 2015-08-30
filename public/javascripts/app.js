@@ -10,6 +10,7 @@ app.config(function ($routeProvider, $locationProvider) {
     .when('/:id', {
       templateUrl: 'partials/movie.html',
       controller: 'homeController',
+      controller: 'movieController',
       controller: 'filmController'
     })
 })
