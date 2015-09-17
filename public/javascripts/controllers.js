@@ -4,8 +4,11 @@ app.controller('homeController', ['$scope','$http',
     $http.get('http://www.omdbapi.com/?s='+ $scope.search).then(function (data) {
       console.log(data)
       $scope.results = data.data.Search
+      $scope.search = '';
     })
   }
+
+
 }]);
 
 
@@ -16,6 +19,7 @@ app.controller('movieController', ["$scope","$http",
       $http.get('http://www.omdbapi.com/?s='+ $scope.search).then(function (data) {
         console.log(data)
         $scope.results = data.data.Search
+        $scope.search = ''
       })
     }
 }])
